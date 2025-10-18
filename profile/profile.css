@@ -235,10 +235,13 @@ header {
         align-items: center;
     }
 
-    .card, .presentation, .interets {
+    .card {
         width: 90%;
     }
 
+    .description{
+        margin: 4vw;
+    }
     .content {
         height: auto;
     }
