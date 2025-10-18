@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font_titre1 {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6vw;
+    color:  #24C85C;
+    filter: drop-shadow(
+        clamp(0px, 0.5vw, 1vw) clamp(0px, 0.5vh, 3px) 0px #F3003C
+    );
+}
+
+.font_soustitre {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 70;
+}
+
+body {
+    background-image: url(../image/back2.png);
+    background-color: #f2edd3;
+    background-size: 100vw;
+    background-repeat:repeat;
+}
+
+.top1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.top2 {
+    position: absolute;
+    top: -5vh;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh 0 5vh;    
+    color: #24C85C;
+    text-decoration: #24C85C dashed underline;
+    text-underline-offset: 3vw;
+    font-size: 6vw;
+}
+
+@media only screen and (min-width: 967px) {
+    .content{
+        height: 40vh;
+    }
+}
+
+
+.p1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    animation: fade_apparition1 0.7s ease-out;
+}
+
+.p2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    animation: fade_apparition2 0.7s ease-out;
+}
+
+main {
+    padding-top: 10vh;
+    padding-left: 5vw;
+}
+
+.content {
+    border-radius: 15px;
+    background-color: rgb(247, 233, 241);
+    border: #24C85C solid 6px;
+    filter: drop-shadow(
+        clamp(10px, 1vw, 15px) clamp(6px, 1vh, 10px) 0px #F3003C
+    );
+    height: auto;
+    padding-bottom: 100px;
+    width: 90vw;
+    z-index: 3;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.close-btn {
+    position: absolute;
+    top:0vh;
+    right: 0vw;
+    margin-top: 5vh;
+    margin-right: 5vw;
+    font-size: 5vw;
+    color: white;
+    text-decoration: none;
+    background-color: #24C85C;
+    cursor: pointer;
+    border: #24C85C solid 6px;
+    border-radius: 50px;
+    animation-delay: 1s;
+    animation: fade_apparition2 2s ease-out;
+}
+
+.close-btn:hover {
+    transition: 0.3s;
+    color: #F3003C;
+    background-color: white;
+    border: #24C85C solid 6px;
+}
+
+
+@keyframes fade_apparition1 {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade_apparition2 {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    margin: 0 10vw;
+    font-family: "Noto Sans", sans-serif;
+    animation: fade_apparition1 1s ease-out;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #24C85C;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 2px solid #24C85C;
+    border-radius: 10px;
+    padding: 1vh 1vw;
+    font-size: 1em;
+    background-color: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #F3003C;
+}
+
+.contact-form button {
+    background-color: #24C85C;
+    color: white;
+    border: none;
+    padding: 1vh 2vw;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: white;
+    color: #F3003C;
+    border: 2px solid #24C85C;
+}
+
+.contact-links {
+    margin: 4vh 10vw;
+    font-family: "Noto Sans", sans-serif;
+    color: #333;
+    font-size: 1em;
+    animation: fade_apparition1 1s ease-out;
+}
+
+.contact-links p {
+    margin-bottom: 1vh;
+}
+
+.contact-links a {
+    color: #F3003C;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
