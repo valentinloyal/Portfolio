@@ -30,6 +30,27 @@ body {
     background-repeat:repeat;
 }
 
+.dark-mode {
+    background-color: #113422;
+    background-image: none;
+}
+
+/* Autres éléments spécifiques */
+body.dark-mode .content {
+    background-color: #333;
+    border: #24C85C solid 6px;
+}
+
+body.dark-mode .close-btn {
+    background-color: #333;
+    color: white;
+    border: #24C85C solid 6px;
+}
+
+body.dark-mode .close-btn:hover{
+    border: #F3003C solid 6px;
+}
+
 .top1 {
     position: absolute;
     top: 0;
@@ -163,6 +184,12 @@ header {
     padding: 5vh 5vw 0 5vw;
 }
 
+body.dark-mode .experience-card{
+    background-color: #113422;
+}
+body.dark-mode .experience-card p{
+    color: white;
+}
 .experience-card {
     background-color: white;
     border-left: 8px solid #24C85C;

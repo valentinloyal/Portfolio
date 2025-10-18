@@ -29,6 +29,26 @@ body {
     background-size: 100vw;
     background-repeat:repeat;
 }
+.dark-mode {
+    background-color: #113422;
+    background-image: none;
+}
+
+/* Autres éléments spécifiques */
+body.dark-mode .content {
+    background-color: #333;
+    border: #24C85C solid 6px;
+}
+
+body.dark-mode .close-btn {
+    background-color: #333;
+    color: white;
+    border: #24C85C solid 6px;
+}
+
+body.dark-mode .close-btn:hover{
+    border: #F3003C solid 6px;
+}
 
 .top1 {
     position: absolute;
@@ -172,6 +192,14 @@ header {
     animation: fade_apparition1 0.8s ease-out;
     border: 3px solid #24C85C;
     transition: transform 0.3s ease;
+}
+
+body.dark-mode .skill-card{
+    background-color: #113422;
+}
+
+body.dark-mode .skill-card li{
+    color: white;
 }
 
 .skill-card:hover {

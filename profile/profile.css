@@ -101,6 +101,32 @@ main {
     z-index: 3;
 }
 
+.dark-mode {
+    background-color: #113422;
+    background-image: none;
+}
+
+/* Autres éléments spécifiques */
+body.dark-mode .content {
+    background-color: #333;
+    border: #24C85C solid 6px;
+}
+
+body.dark-mode .close-btn {
+    background-color: #333;
+    color: white;
+    border: #24C85C solid 6px;
+}
+
+body.dark-mode .close-btn:hover{
+    border: #F3003C solid 6px;
+}
+
+body.dark-mode .card {
+    background-color: #23472a;
+    color: white;
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -173,6 +199,19 @@ header {
     text-align: center;
     flex-shrink: 0;
     animation: fade_apparition1 0.7s ease-out;
+}
+
+body.dark-mode .presentation{
+    background-color: #23472a;
+    font-size: 1.5em;
+    color: white;
+}
+
+body.dark-mode .interets{
+    background-color: #23472a;
+}
+body.dark-mode .interets ul{
+    color: white;
 }
 
 .img {

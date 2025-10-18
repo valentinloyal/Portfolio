@@ -32,6 +32,19 @@ body {
     background-repeat:repeat;
 }
 
+.dark-mode {
+    background-color: #113422;
+    background-image: none;
+}
+body.dark-mode button {
+    background-color: #333;
+    color: #eee;
+}
+body.dark-mode button:hover {
+    color: #24C85C;
+    background-color: #333;
+}
+
 @media only screen and (min-width: 1475px) {
     body {
         overflow: hidden;
@@ -163,3 +176,18 @@ button.grow-button-profile h2 {
     transform: translateX(-50%) translateY(32%);
     font-size: 6vw;
 }
+
+.toggle{
+    position: absolute;
+    top: 4vh;
+    right: 4vw;
+    z-index: 1;
+    width: 8vw;
+    cursor: pointer;
+    transition: transform 1.5s ease;
+}
+
+.toggle:hover{
+    transform: scale(1.5) rotate(180deg);
+}
+

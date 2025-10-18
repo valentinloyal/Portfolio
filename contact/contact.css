@@ -29,6 +29,26 @@ body {
     background-size: 100vw;
     background-repeat:repeat;
 }
+.dark-mode {
+    background-color: #113422;
+    background-image: none;
+}
+
+/* Autres éléments spécifiques */
+body.dark-mode .content {
+    background-color: #333;
+    border: #24C85C solid 6px;
+}
+
+body.dark-mode .close-btn {
+    background-color: #333;
+    color: white;
+    border: #24C85C solid 6px;
+}
+
+body.dark-mode .close-btn:hover{
+    border: #F3003C solid 6px;
+}
 
 .top1 {
     position: absolute;
@@ -202,6 +222,10 @@ header {
     background-color: white;
     color: #F3003C;
     border: 2px solid #24C85C;
+}
+
+body.dark-mode .contact-links{
+    color: white;
 }
 
 .contact-links {
